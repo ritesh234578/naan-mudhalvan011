@@ -17,4 +17,53 @@
       background: #fff;
       padding: 20px;
       border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
     }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h2 {
+      margin: 10px 0;
+    }
+    .card p {
+      color: #555;
+    }
+    .price {
+      font-size: 20px;
+      color: #333;
+      margin: 10px 0;
+    }
+    .btn {
+      background: #28a745;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Product Image" />
+    <h2>Wireless Headphones</h2>
+    <p>High-quality sound with noise cancellation.</p>
+    <div class="price">₹2,499</div>
+    <button class="btn" onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <script>
+    function addToCart() {
+      alert("Product added to cart!");
+    }
+  </script>
+
+</body>
+</html>
